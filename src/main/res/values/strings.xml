@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">z5工具箱</string>
+	<string name="z5exit">退出</string>
+	<string name="z5fuelsummary">满血充电</string>
+	<string name="z5engineermode">工厂测试</string>
+	<string name="z5acgo">跳转应用活动</string>
+	<string name="iqooz5tool">iQOO Z5工具箱</string>
+	<string name="developer_ying">由酷安@ying5544制作</string>
+	<string name="goac">确定</string>
+	<string name="z5phonesetsms">手机移动网络信息</string>
+	<string name="viqoo">viqoo更多选择</string>
+	<string name="killedit">清空</string>
+</resources>

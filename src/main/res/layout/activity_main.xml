@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/ac_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+			<ViewFlipper
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:inAnimation="@anim/fade_in"
+				android:outAnimation="@anim/fade_out"
+				android:flipInterval="3000"
+				android:layout_centerInParent="true"
+				android:autoStart="true">
+            <com.iqooz5.view.z5TextViewColor
+                android:textColor="#FF000000"
+				android:textSize="30dp"
+				android:gravity="center"
+				android:background="@drawable/button4_background"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/iqooz5tool" />
+			<com.iqooz5.view.z5TextViewColor
+					android:textColor="#FF000000"
+					android:textSize="30dp"
+					android:gravity="center"
+					android:background="@drawable/button4_background"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/developer_ying" />
+			</ViewFlipper>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <View
+                android:background="#FF66CCFF"
+                android:layout_width="match_parent"
+                android:layout_height="3dp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <TextClock
+                android:textSize="30dp"
+                android:textColor="#FF00FFFF"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:format12Hour="yyyy:MM:dd:HH:mm:ss"
+                android:format24Hour="yyyy:MM:dd:HH:mm:ss" />
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <View
+            android:background="#FF66CCFF"
+            android:layout_width="match_parent"
+            android:layout_height="3dp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.iqooz5.view.z5Button
+                    android:textColor="#FF000000"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button4_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/z5fuelsummary"
+                    android:id="@+id/z5fuelsummary"
+					android:onClick="z5fuelsummary"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp" />
+				<com.iqooz5.view.z5Button
+                    android:textColor="#FF000000"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button4_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/z5engineermode"
+                    android:id="@+id/z5engineermode"
+					android:onClick="z5engineermode"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp" />
+				<com.iqooz5.view.z5Button
+                    android:textColor="#FF000000"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button4_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/z5phonesetsms"
+                    android:id="@+id/z5phonesetsms"
+					android:onClick="z5phonesetsms"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp" />
+				<com.iqooz5.view.z5Button
+                    android:textColor="#FF000000"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button4_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/z5acgo"
+                    android:id="@+id/z5acgo"
+					android:onClick="z5acgo"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp" />
+                <com.iqooz5.view.z5Button
+                    android:textColor="#FF000000"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button4_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="@string/z5exit"
+                    android:id="@+id/z5exit"
+					android:onClick="z5exit"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp" />
+            </LinearLayout>
+        </ScrollView>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <View
+            android:background="#FF66CCFF"
+            android:layout_width="match_parent"
+            android:layout_height="3dp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+        <ScrollView
+            android:background="#2BFFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.iqooz5.view.z5LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.iqooz5.view.z5TextViewColor
+                    android:textSize="20dp"
+                    android:textColor="#FF00FFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tips: " />
+            </com.iqooz5.view.z5LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
+
